@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours SNT - Hadi Lamari</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f8fc;
+    }
+    header {
+      background-color: #005a9c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      vertical-align: middle;
+    }
+    nav {
+      background: #e0eafc;
+      padding: 20px;
+      max-width: 300px;
+      float: left;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #005a9c;
+      text-decoration: none;
+    }
+    main {
+      margin-left: 320px;
+      padding: 20px;
+    }
+    section {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      clear: both;
+      text-align: center;
+      background: #ddd;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sciences_num%C3%A9riques_et_technologie_-_Logo.png" alt="Logo SNT" />
+  <h1>Site SNT de Hadi Lamari</h1>
+  <p>Sciences Numériques et Technologie</p>
+</header>
+
+<nav>
+  <a href="#" onclick="showSection('internet')">🌐 Représentation d'Internet</a>
+  <a href="#" onclick="showSection('python')">💻 Programmation Python</a>
+  <a href="#" onclick="showSection('donnees')">📊 Données structurées</a>
+  <a href="#" onclick="showSection('reseaux')">📱 Réseaux sociaux</a>
+  <a href="#" onclick="showSection('objets')">📡 Objets connectés</a>
+  <a href="#" onclick="showSection('photo')">📷 Photographie numérique</a>
+  <a href="#" onclick="showSection('localisation')">📍 Localisation</a>
+  <a href="#" onclick="showSection('carte')">🗺️ Cartographie</a>
+  <a href="#" onclick="showSection('web')">🌐 Internet et Web</a>
+</nav>
+
+<main>
+  <section id="internet" class="active">
+    <h2>Représentation d'Internet</h2>
+    <p>Internet est un réseau mondial d’ordinateurs connectés entre eux. On y utilise des adresses IP, des routeurs, des serveurs, etc.</p>
+  </section>
+
+  <section id="python">
+    <h2>Programmation Python</h2>
+    <p>Python est un langage simple pour apprendre à coder. Il permet de manipuler des variables, des boucles, des conditions, etc.</p>
+  </section>
+
+  <section id="donnees">
+    <h2>Données structurées</h2>
+    <p>Les données structurées sont organisées (comme dans des tableaux). On peut les analyser facilement avec des outils numériques.</p>
+  </section>
+
+  <section id="reseaux">
+    <h2>Réseaux sociaux</h2>
+    <p>Les réseaux sociaux permettent de partager des informations. Ils posent aussi des questions sur la vie privée et l’algorithme.</p>
+  </section>
+
+  <section id="objets">
+    <h2>Objets connectés</h2>
+    <p>Les objets connectés, comme les montres ou capteurs, utilisent l’informatique embarquée pour fonctionner et communiquer.</p>
+  </section>
+
+  <section id="photo">
+    <h2>Photographie numérique</h2>
+    <p>La photographie numérique convertit la lumière en données (pixels). On peut modifier, stocker et transmettre les images facilement.</p>
+  </section>
+
+  <section id="localisation">
+    <h2>Localisation</h2>
+    <p>La localisation repose sur le GPS, les satellites et des calculs mathématiques pour positionner un objet sur la Terre.</p>
+  </section>
+
+  <section id="carte">
+    <h2>Cartographie</h2>
+    <p>La cartographie permet de représenter des informations géographiques. Les cartes numériques sont interactives et dynamiques.</p>
+  </section>
+
+  <section id="web">
+    <h2>Internet et Web</h2>
+    <p>Le Web est un service qui fonctionne sur Internet. Il utilise des navigateurs, des pages HTML, des liens et des serveurs web.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Hadi Lamari | Site SNT - Tous droits réservés.</p>
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
